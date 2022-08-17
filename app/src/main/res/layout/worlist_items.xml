@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_170dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="@dimen/dimen_268dp"
+            android:layout_height="@dimen/dimen_140dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.636"
+            app:layout_constraintStart_toEndOf="@+id/ivHero"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.304">
+
+            <TextView
+                android:id="@+id/tvSuperHeroName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/dimen_6dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:text="Spiderman"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_20sp" />
+
+            <TextView
+                android:id="@+id/tvPublisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/dimen_9dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:text="Arania"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/dimen_16sp" />
+
+
+            <TextView
+                android:id="@+id/tvRealName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:lineSpacingExtra="@dimen/dimen_20sp"
+                android:textSize="@dimen/dimen_16sp"
+                tools:text="Peter Parker" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivHero"
+            android:layout_width="@dimen/dimen_110dp"
+            android:layout_height="@dimen/dimen_132dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.28" />
+
+        <View
+            android:layout_width="@dimen/dimen_377dp"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:background="#DDDCDC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.238" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

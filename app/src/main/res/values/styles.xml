@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+    <style name="textInput" parent="Base.Widget.MaterialComponents.TextInputLayout">
+    </style>
+    <style name="bottom_navigation" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+    <style name="small_title_text" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="movie_details_toolbar">
+        <item name="android:background">@color/white</item>
+        <item name="android:navigationIcon">@drawable/ic_arrow_back</item>
+    </style>
+</resources>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.menu.nav.search.DetailFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_70dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/vBDetail2"
+                android:layout_width="@dimen/dimen_374dp"
+                android:layout_height="@dimen/dimen_3dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:background="@color/colorView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGide" />
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/topAppBar"
+                    style="@style/movie_details_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:navigationIcon="@drawable/ic_arrow_back"
+                    app:titleCentered="true"
+                    app:titleTextAppearance="@style/small_title_text"
+                    tools:title="Movie title" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <View
+                android:id="@+id/vBDetail1"
+                android:layout_width="@dimen/dimen_11dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:background="@drawable/style_border_rvprofile"
+                android:backgroundTint="@color/navColor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.062"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.101" />
+
+            <TextView
+                android:id="@+id/tvGirl"
+                android:layout_width="@dimen/dimen_178dp"
+                android:layout_height="@dimen/dimen_26dp"
+                android:layout_marginTop="@dimen/dimen_72dp"
+                android:text="Gambito de dama"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toEndOf="@+id/vBDetail1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_43dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="The queens Gambit (titulo original)"
+                android:textColor="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGirl" />
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_43dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="Miniseria de TV 2020 - 2020 16"
+                android:textColor="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.208"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
+
+            <ImageView
+                android:id="@+id/ivCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/queens"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvYear"
+                app:layout_constraintVertical_bias="0.052" />
+
+            <ImageView
+                android:id="@+id/ivPlayCenter"
+                android:layout_width="@dimen/dimen_75dp"
+                android:layout_height="@dimen/dimen_64dp"
+                android:src="@drawable/ic_play_circle"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCenter"
+                app:layout_constraintEnd_toEndOf="@+id/ivCenter"
+                app:layout_constraintStart_toStartOf="@+id/ivCenter"
+                app:layout_constraintTop_toTopOf="@+id/ivCenter" />
+
+            <ImageView
+                android:id="@+id/ivGambit"
+                android:layout_width="@dimen/dimen_109dp"
+                android:layout_height="@dimen/dimen_152dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/netflix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.083"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivCenter" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tvDrama"
+                android:layout_width="@dimen/dimen_68dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:text="Drama"
+                app:chipCornerRadius="@dimen/dimen_1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.096"
+                app:layout_constraintStart_toEndOf="@+id/ivGambit"
+                app:layout_constraintTop_toBottomOf="@+id/ivCenter"
+                app:layout_constraintVertical_bias="0.051" />
+
+            <ImageView
+                android:id="@+id/ivStar"
+                android:layout_width="@dimen/dimen_24dp"
+                android:layout_height="@dimen/dimen_26dp"
+                android:src="@drawable/ic_star"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toEndOf="@+id/tvDrama"
+                app:layout_constraintTop_toBottomOf="@+id/ivCenter"
+                app:layout_constraintVertical_bias="0.060000002" />
+
+            <TextView
+                android:id="@+id/tvCalification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toEndOf="@+id/ivStar"
+                app:layout_constraintTop_toBottomOf="@+id/ivCenter"
+                app:layout_constraintVertical_bias="0.07" />
+
+            <TextView
+                android:id="@+id/tvInformation"
+                android:layout_width="@dimen/dimen_219dp"
+                android:layout_height="@dimen/dimen_122dp"
+                android:text="Ambientada en la Guerra Fria"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.379"
+                app:layout_constraintStart_toEndOf="@+id/ivGambit"
+                app:layout_constraintTop_toBottomOf="@+id/tvDrama"
+                app:layout_constraintVertical_bias="0.081" />
+
+            <View
+                android:id="@+id/vBDetail3"
+                android:layout_width="@dimen/dimen_374dp"
+                android:layout_height="@dimen/dimen_3dp"
+                android:background="@color/colorView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.567"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivGambit"
+                app:layout_constraintVertical_bias="0.224" />
+
+            <TextView
+                android:id="@+id/tvGide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_36dp"
+                android:text="Guia de episodios"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vBDetail3"
+                app:layout_constraintVertical_bias="0.098" />
+
+            <TextView
+                android:id="@+id/tvEpisode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 episodios"
+                android:textSize="@dimen/dimen_16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.664"
+                app:layout_constraintStart_toEndOf="@+id/tvGide"
+                app:layout_constraintTop_toBottomOf="@+id/vBDetail3"
+                app:layout_constraintVertical_bias="0.14" />
+
+            <Button
+                android:id="@+id/btnList"
+                android:layout_width="@dimen/dimen_310dp"
+                android:layout_height="@dimen/dimen_56dp"
+                android:layout_marginBottom="@dimen/dimen_4dp"
+                android:background="@drawable/style_button"
+                android:backgroundTint="@color/navColor"
+                android:text="Start your watchlist"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/dimen_20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.445"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vBDetail2"
+                app:layout_constraintVertical_bias="0.444" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

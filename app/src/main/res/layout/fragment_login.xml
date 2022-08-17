@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:padding="@dimen/dimen_12sp">
+
+
+    <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="@dimen/dimen_143dp"
+        android:layout_height="@dimen/dimen_103dp"
+        android:fontFamily="@font/anton"
+        android:text="IMDb"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_70dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_29sp"
+        android:background="@drawable/style_tilayout"
+        app:boxBackgroundMode="none"
+        app:expandedHintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/tlPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogo"
+        app:layout_constraintVertical_bias="0.765">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/iEditexU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_tilayout" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_29sp"
+        android:background="@drawable/style_tilayout"
+        app:boxBackgroundMode="none"
+        app:expandedHintEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogo"
+        app:layout_constraintVertical_bias="0.25">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/iEditextP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_tilayout" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/dimen_295dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_margin="@dimen/dimen_29sp"
+        android:backgroundTint="@color/grayColor"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
+
+    <TextView
+        android:id="@+id/tvRecomendation"
+        android:layout_width="@dimen/dimen_248dp"
+        android:layout_height="@dimen/dimen_43dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:text="Or you can log in with"
+        android:textAlignment="center"
+        android:textColor="@color/grayColor"
+        android:textSize="@dimen/dimen_20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ivAppleCircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/ivAppleCircle"
+        android:layout_width="@dimen/dimen_46dp"
+        android:layout_height="@dimen/dimen_46dp"
+        android:layout_marginBottom="@dimen/dimen_104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivFacebookCircle"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/ivApple"
+        android:layout_width="@dimen/dimen_23dp"
+        android:layout_height="@dimen/dimen_23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAppleCircle"
+        app:layout_constraintEnd_toEndOf="@+id/ivAppleCircle"
+        app:layout_constraintStart_toStartOf="@+id/ivAppleCircle"
+        app:layout_constraintTop_toTopOf="@+id/ivAppleCircle"
+        app:layout_constraintVertical_bias="0.42000002"
+        app:srcCompat="@drawable/apple" />
+
+    <ImageView
+        android:id="@+id/ivFacebookCircle"
+        android:layout_width="@dimen/dimen_46dp"
+        android:layout_height="@dimen/dimen_46dp"
+        android:layout_marginBottom="@dimen/dimen_104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ivGoogleCircle"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/ivFacebook"
+        android:layout_width="@dimen/dimen_23dp"
+        android:layout_height="@dimen/dimen_23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFacebookCircle"
+        app:layout_constraintEnd_toEndOf="@+id/ivFacebookCircle"
+        app:layout_constraintStart_toStartOf="@+id/ivFacebookCircle"
+        app:layout_constraintTop_toTopOf="@+id/ivFacebookCircle"
+        app:srcCompat="@drawable/facebook" />
+
+
+    <ImageView
+        android:id="@+id/ivGoogleCircle"
+        android:layout_width="@dimen/dimen_46dp"
+        android:layout_height="@dimen/dimen_46dp"
+        android:layout_marginBottom="@dimen/dimen_104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/ivGoogle"
+        android:layout_width="@dimen/dimen_23dp"
+        android:layout_height="@dimen/dimen_23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGoogleCircle"
+        app:layout_constraintEnd_toEndOf="@+id/ivGoogleCircle"
+        app:layout_constraintStart_toStartOf="@+id/ivGoogleCircle"
+        app:layout_constraintTop_toTopOf="@+id/ivGoogleCircle"
+        app:srcCompat="@drawable/google" />
+
+    <TextView
+        android:id="@+id/tvNoCount"
+        android:layout_width="@dimen/dimen_180dp"
+        android:layout_height="@dimen/dimen_27dp"
+        android:text="¿You don't have an account?"
+        android:textSize="@dimen/dimen_14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvRegistro"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivApple"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/tvRegistro"
+        android:layout_width="@dimen/dimen_78dp"
+        android:layout_height="@dimen/dimen_22dp"
+        android:text="Register"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvInvitado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivGoogleCircle"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/tvInvitado"
+        android:layout_width="@dimen/dimen_285dp"
+        android:layout_height="@dimen/dimen_28sp"
+        android:text="You don't have an account"
+        android:textAlignment="center"
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="@dimen/dimen_158dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_marginBottom="@dimen/dimen_12dp"
+        android:text="¿Forgot your password?"
+        android:textColor="@color/darkGray"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlPassword"
+        app:layout_constraintVertical_bias="0.275" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/dimen_70dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:text="User"
+        android:textColor="@color/darkGray"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/darkGray"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tlPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlName"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
